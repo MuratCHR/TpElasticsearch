@@ -66,3 +66,8 @@ POST /_bulk
 { "index": { "_index":"doc_cours", "_id":"5"} }
 { "filename": "Cours 5", "filesize" : "1", "datecrea": "2023-05-22" }
 ``` 
+
+## Search documents
+```javascript
+GET doc_cours/_doc/1
+```
