@@ -29,7 +29,7 @@ user : elastic
 
 password : generated previously
 
-### Create index with explicit mappings
+## Create index with explicit mappings
 ```javascript
 PUT /doc_cours
 {
@@ -44,3 +44,25 @@ PUT /doc_cours
 }
 ```
 
+## Index documents 
+```javascript
+PUT /doc_cours/_doc/1
+{
+  "filename": "Cours 1",
+  "filesize": "1",
+  "datecrea": "2023-05-22"
+}
+```
+
+## With Bulk
+```javascript
+POST /_bulk
+{ "index": { "_index":"doc_cours", "_id":"2"} }
+{ "filename": "Cours 2", "filesize" : "1", "datecrea": "2023-05-22" }
+{ "index": { "_index":"doc_cours", "_id":"3"} }
+{ "filename": "Cours 3", "filesize" : "1", "datecrea": "2023-05-22" }
+{ "index": { "_index":"doc_cours", "_id":"4"} }
+{ "filename": "Cours 4", "filesize" : "1", "datecrea": "2023-05-22" }
+{ "index": { "_index":"doc_cours", "_id":"5"} }
+{ "filename": "Cours 5", "filesize" : "1", "datecrea": "2023-05-22" }
+``` 
