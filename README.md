@@ -71,3 +71,15 @@ POST /_bulk
 ```javascript
 GET doc_cours/_doc/1
 ```
+
+## Search with args 
+```javascript
+GET doc_cours/_search
+{
+  "query": {
+    "match_phrase": {
+      "filename": "Cours 1"
+      }
+  }
+}
+```
