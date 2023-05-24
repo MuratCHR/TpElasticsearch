@@ -71,3 +71,36 @@ POST /_bulk
 ```javascript
 GET doc_cours/_doc/1
 ```
+
+## Search with args 
+```javascript
+GET doc_cours/_search
+{
+  "query": {
+    "match_phrase": {
+      "filename": "Cours 1"
+      }
+  }
+}
+```
+
+## Mapping modifcation
+```javascript
+PUT doc_cours/_mapping
+{ 
+  "properties": {
+    "description": { 
+      "type": "text"
+     }
+   }  
+ }
+ ```
+ 
+On peut modifier la mapping sans le recréer dans les cas suivants :
+- Ajouter de nouveaux champs.
+- Modification des paramètres du mapping.
+
+Mais certaines modifications ne sont pas possible sans recréer l'index :
+- Changement du type d'index.
+- Suppression de champs existants.
+
