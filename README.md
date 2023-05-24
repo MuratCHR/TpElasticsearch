@@ -85,7 +85,7 @@ GET doc_cours/_search
 ```
 
 ## Mapping modifcation
-```javapscript
+```javascript
 PUT doc_cours/_mapping
 { 
   "properties": {
@@ -96,11 +96,11 @@ PUT doc_cours/_mapping
  }
  ```
  
- On peut modifier la mapping sans le recréer dans les cas suivants :
- - Ajouter de nouveaux champs.
- - Modification des paramètres du mapping.
+On peut modifier la mapping sans le recréer dans les cas suivants :
+- Ajouter de nouveaux champs.
+- Modification des paramètres du mapping.
 
- Mais certaines modifications ne sont pas possible sans recréer l'index :
- - Changement du type d'index.
- - Suppression de champs existants.
+Mais certaines modifications ne sont pas possible sans recréer l'index :
+- Changement du type d'index.
+- Suppression de champs existants.
 
