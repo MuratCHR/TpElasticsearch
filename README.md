@@ -114,3 +114,5 @@ Il permet la création d'un alias pour un index, ce qui permet de l'utiliser com
 Il est recommandé d'avoir au moins trois noeuds maîtres répartis sur trois machines distinctes dans un cluster. Cette configuration renforce la robustesse d'Elasticsearch en termes d'intégrité des données, car même si un noeud tombe en panne, il reste au moins deux autres capables de prendre le relais et de gérer le cluster.
 Les noeuds avec le rôle de données sont responsables de la gestion des index et des shards. Un shard représente une partie de l'index qui est stockée sur un noeud. Ensuite, il est possible de créer un réplica de ce shard et de le stocker sur un autre noeud. Cette approche garantit une redondance des données en cas d'incident avec le shard principal, grâce au shard réplica.
 
+## Group project
+https://github.com/Bro7Alexis/elasticSearch
