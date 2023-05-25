@@ -105,6 +105,7 @@ Mais certaines modifications ne sont pas possible sans le recréer :
 - Suppression de champs existants.
 
 ## Global schema
+![image](https://github.com/MuratCHR/TpElasticsearch/assets/77275197/fbef91c6-4934-487d-8496-060ac91688f2)
 
 ### Comment Elasticsearch stocke ses données et comment certaines de ces notions permettent de gagner en robustesse (en termes de sauvegarde et d’intégrité des données) ?
 
